@@ -1,0 +1,19 @@
+{
+	"version": "0.1",
+	"name": "IQ test",
+	"description": "Quick and easy IQ test. Share results with your friends!",
+	"launch_path": "/html/index.html",
+	"icons": {
+		"16": "/img/icons/iq-16.png",
+		"48": "/img/icons/iq-48.png",
+		"128": "/img/icons/iq-128.png"
+	},
+	"developer": {
+		"name": "Your Name",
+		"url": "http://yourawesomeapp.com"
+	},
+	"installs_allowed_from": ["*"],
+	"permissions": {
+		"systemXHR": {}
+	}
+}
