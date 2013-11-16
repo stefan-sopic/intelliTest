@@ -11,7 +11,7 @@
 You may need to use `sudo npm install -g volo` if your user doesn't have admin permissions.
 
 ###3.  Run the app!###
-	cd firefoxos-quick-start/app
+	cd intelliTest/app
 	volo serve
 
 ###4.  Visit in browser or Firefox OS Simulator###

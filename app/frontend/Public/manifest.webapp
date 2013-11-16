@@ -9,8 +9,8 @@
 		"128": "/img/icons/iq-128.png"
 	},
 	"developer": {
-		"name": "Your Name",
-		"url": "http://yourawesomeapp.com"
+		"name": "Stefan Sopic",
+		"url": "https://github.com/stefan-sopic/intelliTest"
 	},
 	"installs_allowed_from": ["*"],
 	"permissions": {
