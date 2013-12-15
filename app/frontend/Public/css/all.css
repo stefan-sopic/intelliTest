@@ -1,3 +1,15 @@
-.stefan {
-  background: red;
-  float: left; }
+body {
+  background-image: url("../img/background.png");
+  background-color: #000000; }
+  body header h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  body .main .container .pure-u-1 {
+    padding: 10px;
+    width: auto;
+    text-align: center; }
+    body .main .container .pure-u-1 a.pure-button {
+      margin: 0 auto;
+      border-radius: 5px;
+      background: #ca3c3c; }

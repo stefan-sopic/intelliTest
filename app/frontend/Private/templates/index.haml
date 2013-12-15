@@ -1,14 +1,20 @@
 !!! 5
 %html
   %head
-    %title Firefox OS
-    %body
-      .container
-        %header
-          %h1 Hello world
-        .main
+    %title IQ test
+    %link{"rel" => "stylesheet", "href" => "http://yui.yahooapis.com/pure/0.3.0/pure-min.css", "type" => "text/css"}
+    %link{"rel" => "stylesheet", "href" => "../css/all.css", "type" => "text/css"}
+  %body
+    %header
+      %h1 Mensa certified IQ test
+    .main
+      .container.pure-g-r
+        .pure-u-1
           %p
-            content
-        %footer
-          %p
-            footer
+            Mensa is the organization which accepts only those who score in the 98th percentile on an IQ test.
+            This is accurate and high quality iq test which is similar to mensa iq test.
+            Test lasts 10 minutes and has 20 question. Good luck!
+          %a.pure-button.pure-button-success{:href => "test.html"}
+            Start test
+    %footer
+      %p

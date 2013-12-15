@@ -1,4 +1,27 @@
-.stefan {
-  background: red;
-  float: left;
+body {
+    background-image: url('../img/background.png');
+    background-color: #000000;
+
+    header {
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    }
+    .main {
+        .container {
+            .pure-u-1 {
+                padding: 10px;
+                width: auto;
+                text-align: center;
+
+                a.pure-button {
+                    margin: 0 auto;
+                    border-radius: 5px;
+                    background: rgb(202, 60, 60);
+                }
+            }
+        }
+    }
 }
