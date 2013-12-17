@@ -4,12 +4,695 @@
     %title IQ test
     %link{"rel" => "stylesheet", "href" => "http://yui.yahooapis.com/pure/0.3.0/pure-min.css", "type" => "text/css"}
     %link{"rel" => "stylesheet", "href" => "../css/all.css", "type" => "text/css"}
+    %script{"src" => "js/jquery-2.0.3.min.js"}
+    %script{"src" => "js/main.js"}
   %body
     %header
-
     .main
       .container.pure-g-r
-        .pure-u-1
+        .pure-u-1.page
+          %form.pure-form.pure-form-stacked#slider{ :ontouchstart => "touchStart(event,'slider');", :ontouchend => "touchEnd(event);", :ontouchmove => "touchMove(event);", :ontouchcancel => "touchCancel(event);"}
+            %fieldset.visible
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question1', :type => 'radio', :value => 'option1'}
+                Bear
+              %label.pure-radio
+                %input{ :name => 'question1', :type => 'radio', :value => 'option2'}
+                Snake
+              %label.pure-radio
+                %input{ :name => 'question1', :type => 'radio', :value => 'option3'}
+                Cow
+              %label.pure-radio
+                %input{ :name => 'question1', :type => 'radio', :value => 'option4'}
+                Dog
+              %label.pure-radio
+                %input{ :name => 'question1', :type => 'radio', :value => 'option5'}
+                Tiger
+            %fieldset
+              %p.question
+                If you rearrange the letters "BARBIT", you would have the name of a:
+              %label.pure-radio
+                %input{ :name => 'question2', :type => 'radio', :value => 'option1'}
+                Ocean
+              %label.pure-radio
+                %input{ :name => 'question2', :type => 'radio', :value => 'option2'}
+                Country
+              %label.pure-radio
+                %input{ :name => 'question2', :type => 'radio', :value => 'option3'}
+                State
+              %label.pure-radio
+                %input{ :name => 'question2', :type => 'radio', :value => 'option4'}
+                City
+              %label.pure-radio
+                %input{ :name => 'question2', :type => 'radio', :value => 'option5'}
+                Animal
+            %fieldset
+              %p.question
+                Which one of the five designs makes the best comparison?
+                %img{ :src => 'img/3.png'}
+              %label.pure-radio
+                %input{ :name => 'question3', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/3a.png'}
+              %label.pure-radio
+                %input{ :name => 'question3', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/3b.png'}
+              %label.pure-radio
+                %input{ :name => 'question3', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/3c.png'}
+              %label.pure-radio
+                %input{ :name => 'question3', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/3d.png'}
+              %label.pure-radio
+                %input{ :name => 'question3', :type => 'radio', :value => 'option5'}
+                %img{ :src => 'img/3e.png'}
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                Potato
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                Corn
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                Apple
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                Carrot
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                Bean
+            %fieldset
+              %p.question
+                Which one of the five designs makes the best comparison?
+              %P
+                %img{ :src => 'img/5.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/5a.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/5b.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/5c.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/5d.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/5e.png'}
+            %fieldset
+              %p.question
+                John, twelve years old, is three times as old as his brother. How old will John be when he is twice as old as his brother?
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                15
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                16
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                18
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                20
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                21
+            %fieldset
+              %p.question
+                Which one of the five makes the best comparison?
+                BROTHER IS TO SISTER AS NIECE IS TO:
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                Mother
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                Daughter
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                Aunt
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                Uncle
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                Nephew
+            %fieldset
+              %p.question
+                Which one of the five designs is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                A
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                Z
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                F
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                N
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                E
+            %fieldset
+              %p.question
+                Which one of the five makes the best comparison?
+                MILK IS TO GLASS AS LETTER IS TO:
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                Stamp
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                Pen
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                Envelope
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                Book
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                Mail
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/10a.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/10b.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/10c.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/10d.png'}
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/10e.png'}
+            %fieldset
+              %p.question
+                Which one of the five choices makes the best comparison?
+                LIVE is to EVIL as 5232 is to:
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                2523
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                3252
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                2325
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                3225
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option4'}
+                5223
+            %fieldset
+              %p.question
+                "If some Smaugs are Thors and some Thors are Thrains, then some Smaugs are definitely Thrains." This statement is:
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option1'}
+                True
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option2'}
+                False
+              %label.pure-radio
+                %input{ :name => 'question4', :type => 'radio', :value => 'option3'}
+                Neither
+            %fieldset
+              %p.question
+                Which one of the five designs is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/13a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/13b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/13c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/13d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/13e.png'}
+            %fieldset
+              %p.question
+                Which one of the five makes the best comparison?
+                TREE IS TO GROUND AS CHIMNEY IS TO:
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Smoke
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Brick
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Sky
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Garage
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                House
+            %fieldset
+              %p.question
+                Which one of the numbers does not belong in the following series?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                9
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                7
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                8
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                6
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                7
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                5
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                6
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                3
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Touch
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Taste
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Hear
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Smile
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                See
+            %fieldset
+              %p.question
+                Which one of the five designs makes the best comparison?
+              %p
+                %img{ :src => 'img/17.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/17a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/17b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/17c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/17d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/17e.png'}
+            %fieldset
+              %p.question
+                Jack is taller than Peter, and Bill is shorter than Jack. Which of the following statements would be most accurate?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Bill is taller than Peter.
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Bill is shorter than Peter.
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Bill is as tall as Peter.
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                It is impossible to tell.
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Stocking
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Dress
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Shoe
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Purse
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Hat
+            %fieldset
+              %p.question
+                Which one of the five makes the best comparison?
+                CAACCAC is to 3113313 as CACAACAC is to:
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                13133131
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                13133313
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                31311131
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                31311313
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                31313113
+            %fieldset
+              %p.question
+                If you rearrange the letters "RAPIS", you would have the name of a:
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Ocean
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Country
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                State
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                City
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Animal
+            %fieldset
+              %p.question
+                Which one of the designs is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/22a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/22b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/22c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/22d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/22e.png'}
+            %fieldset
+              %p.question
+                Which one of the five makes the best comparison?
+                BULLET IS TO GUN AS BALL IS TO:
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Bat
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Slingshot
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Cannon
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Pitcher
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Catapult
+            %fieldset
+              %p.question
+                If some Bifurs are Bofurs and all Gloins are Bofurs, then some Bifurs are definitely Gloins." This statement is:
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                True
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                False
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Neither
+            %fieldset
+              %p.question
+                Which one of the designs is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/25a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/25b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/25c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/25d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/25e.png'}
+            %fieldset
+              %p.question
+                Which one of the letters does not belong is the following series?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                A
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                D
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                G
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                I
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                J
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                M
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                P
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                S
+            %fieldset
+              %p.question
+                Which one of the five designs makes the best comparison?
+              %p
+                %img{ :src => 'img/27.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/27a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/27b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/27c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/27d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/27e.png'}
+            %fieldset
+              %p.question
+                The price of an article was cut 20% for a sale. By what percent must the item be increased to again sell the article at the original price?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                15%
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                20%
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                25%
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                30%
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                40%
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Copper
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Iron
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Brass
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Tin
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Lead
+            %fieldset
+              %p.question
+                Which one of the five designs makes the best comparison?
+              %p
+                %img{ :src => 'img/30.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/30a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/30b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/30c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/30d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/30e.png'}
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Bottle
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Cup
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Tub
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Funnel
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Bowl
+            %fieldset
+              %p.question
+                Mary had a number of cookies. After eating one, she gave half the remainer to her sister. After eating another cookie, she gave half of what was left to her brother. Mary now had only five cookies left. How many cookies did she start with?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                11
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                22
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                23
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                45
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                46
+            %fieldset
+              %p.question
+                Which one of the five is least like the other four?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Wheat
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Hay
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Barley
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Oats
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Rice
+            %fieldset
+              %p.question
+                Which one of the numbers does not belong is the following series?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                2
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                3
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                6
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                7
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                8
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                14
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                15
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                30
+            %fieldset
+              %p.question
+                Which one of the five designs makes the best comparison?
+              %p
+                %img{ :src => 'img/35.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                %img{ :src => 'img/35a.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                %img{ :src => 'img/35b.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                %img{ :src => 'img/35c.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/35d.png'}
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                %img{ :src => 'img/35e.png'}
+            %fieldset
+              %p.question
+                "A spaceship received three massages in a strange language from a distant planet. The astonauts studied these messages and found that "Elros Aldarion Elendil" means "Danger Rocket Explosion" and "Edain Mnyatur Elros" means "Danger spaceship Fire" and "Aldarion Gimilzor Gondor" means "Bad Gas Explosion". What does "Elendil" mean?
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option1'}
+                Danger
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option2'}
+                Explosion
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option3'}
+                Nothing
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Rocket
+              %label.pure-radio
+                %input{ :name => 'question5', :type => 'radio', :value => 'option4'}
+                Gas
 
+
+              %p
+                %a.pure-button.pure-button-success{:href => "finish.html"}
+                  Finish test
     %footer
       %p

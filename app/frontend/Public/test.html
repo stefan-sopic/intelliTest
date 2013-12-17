@@ -4,12 +4,960 @@
     <title>IQ test</title>
     <link href='http://yui.yahooapis.com/pure/0.3.0/pure-min.css' rel='stylesheet' type='text/css'>
     <link href='../css/all.css' rel='stylesheet' type='text/css'>
+    <script src='js/jquery-2.0.3.min.js'></script>
+    <script src='js/main.js'></script>
   </head>
   <body>
     <header></header>
     <div class='main'>
       <div class='container pure-g-r'>
-        <div class='pure-u-1'></div>
+        <div class='pure-u-1 page'>
+          <form class='pure-form pure-form-stacked' id='slider' ontouchcancel='touchCancel(event);' ontouchend='touchEnd(event);' ontouchmove='touchMove(event);' ontouchstart="touchStart(event,'slider');">
+            <fieldset class='visible'>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question1' type='radio' value='option1'>
+                Bear
+              </label>
+              <label class='pure-radio'>
+                <input name='question1' type='radio' value='option2'>
+                Snake
+              </label>
+              <label class='pure-radio'>
+                <input name='question1' type='radio' value='option3'>
+                Cow
+              </label>
+              <label class='pure-radio'>
+                <input name='question1' type='radio' value='option4'>
+                Dog
+              </label>
+              <label class='pure-radio'>
+                <input name='question1' type='radio' value='option5'>
+                Tiger
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                If you rearrange the letters "BARBIT", you would have the name of a:
+              </p>
+              <label class='pure-radio'>
+                <input name='question2' type='radio' value='option1'>
+                Ocean
+              </label>
+              <label class='pure-radio'>
+                <input name='question2' type='radio' value='option2'>
+                Country
+              </label>
+              <label class='pure-radio'>
+                <input name='question2' type='radio' value='option3'>
+                State
+              </label>
+              <label class='pure-radio'>
+                <input name='question2' type='radio' value='option4'>
+                City
+              </label>
+              <label class='pure-radio'>
+                <input name='question2' type='radio' value='option5'>
+                Animal
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs makes the best comparison?
+                <img src='img/3.png'>
+              </p>
+              <label class='pure-radio'>
+                <input name='question3' type='radio' value='option1'>
+                <img src='img/3a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question3' type='radio' value='option1'>
+                <img src='img/3b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question3' type='radio' value='option3'>
+                <img src='img/3c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question3' type='radio' value='option4'>
+                <img src='img/3d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question3' type='radio' value='option5'>
+                <img src='img/3e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                Potato
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                Corn
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                Apple
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                Carrot
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                Bean
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs makes the best comparison?
+              </p>
+              <P>
+                <img src='img/5.png'>
+              </P>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                <img src='img/5a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                <img src='img/5b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                <img src='img/5c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                <img src='img/5d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                <img src='img/5e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                John, twelve years old, is three times as old as his brother. How old will John be when he is twice as old as his brother?
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                15
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                16
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                18
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                20
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                21
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five makes the best comparison?
+                BROTHER IS TO SISTER AS NIECE IS TO:
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                Mother
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                Daughter
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                Aunt
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                Uncle
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                Nephew
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                A
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                Z
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                F
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                N
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                E
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five makes the best comparison?
+                MILK IS TO GLASS AS LETTER IS TO:
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                Stamp
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                Pen
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                Envelope
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                Book
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                Mail
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                <img src='img/10a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                <img src='img/10b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                <img src='img/10c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                <img src='img/10d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                <img src='img/10e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five choices makes the best comparison?
+                LIVE is to EVIL as 5232 is to:
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                2523
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                3252
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                2325
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                3225
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option4'>
+                5223
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                "If some Smaugs are Thors and some Thors are Thrains, then some Smaugs are definitely Thrains." This statement is:
+              </p>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option1'>
+                True
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option2'>
+                False
+              </label>
+              <label class='pure-radio'>
+                <input name='question4' type='radio' value='option3'>
+                Neither
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/13a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/13b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/13c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/13d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/13e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five makes the best comparison?
+                TREE IS TO GROUND AS CHIMNEY IS TO:
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Smoke
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Brick
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Sky
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Garage
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                House
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the numbers does not belong in the following series?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                9
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                7
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                8
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                6
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                7
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                5
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                6
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                3
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Touch
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Taste
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Hear
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Smile
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                See
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs makes the best comparison?
+              </p>
+              <p>
+                <img src='img/17.png'>
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/17a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/17b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/17c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/17d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/17e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Jack is taller than Peter, and Bill is shorter than Jack. Which of the following statements would be most accurate?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Bill is taller than Peter.
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Bill is shorter than Peter.
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Bill is as tall as Peter.
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                It is impossible to tell.
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Stocking
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Dress
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Shoe
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Purse
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Hat
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five makes the best comparison?
+                CAACCAC is to 3113313 as CACAACAC is to:
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                13133131
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                13133313
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                31311131
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                31311313
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                31313113
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                If you rearrange the letters "RAPIS", you would have the name of a:
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Ocean
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Country
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                State
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                City
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Animal
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the designs is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/22a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/22b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/22c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/22d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/22e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five makes the best comparison?
+                BULLET IS TO GUN AS BALL IS TO:
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Bat
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Slingshot
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Cannon
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Pitcher
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Catapult
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                If some Bifurs are Bofurs and all Gloins are Bofurs, then some Bifurs are definitely Gloins." This statement is:
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                True
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                False
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Neither
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the designs is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/25a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/25b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/25c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/25d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/25e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the letters does not belong is the following series?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                A
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                D
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                G
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                I
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                J
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                M
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                P
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                S
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs makes the best comparison?
+              </p>
+              <p>
+                <img src='img/27.png'>
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/27a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/27b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/27c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/27d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/27e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                The price of an article was cut 20% for a sale. By what percent must the item be increased to again sell the article at the original price?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                15%
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                20%
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                25%
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                30%
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                40%
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Copper
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Iron
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Brass
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Tin
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Lead
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs makes the best comparison?
+              </p>
+              <p>
+                <img src='img/30.png'>
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/30a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/30b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/30c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/30d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/30e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Bottle
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Cup
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Tub
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Funnel
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Bowl
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Mary had a number of cookies. After eating one, she gave half the remainer to her sister. After eating another cookie, she gave half of what was left to her brother. Mary now had only five cookies left. How many cookies did she start with?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                11
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                22
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                23
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                45
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                46
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five is least like the other four?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Wheat
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Hay
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Barley
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Oats
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Rice
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the numbers does not belong is the following series?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                2
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                3
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                6
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                7
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                8
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                14
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                15
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                30
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                Which one of the five designs makes the best comparison?
+              </p>
+              <p>
+                <img src='img/35.png'>
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                <img src='img/35a.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                <img src='img/35b.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                <img src='img/35c.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/35d.png'>
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                <img src='img/35e.png'>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p class='question'>
+                "A spaceship received three massages in a strange language from a distant planet. The astonauts studied these messages and found that "Elros Aldarion Elendil" means "Danger Rocket Explosion" and "Edain Mnyatur Elros" means "Danger spaceship Fire" and "Aldarion Gimilzor Gondor" means "Bad Gas Explosion". What does "Elendil" mean?
+              </p>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option1'>
+                Danger
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option2'>
+                Explosion
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option3'>
+                Nothing
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Rocket
+              </label>
+              <label class='pure-radio'>
+                <input name='question5' type='radio' value='option4'>
+                Gas
+              </label>
+              <p>
+                <a class='pure-button pure-button-success' href='finish.html'>
+                  Finish test
+                </a>
+              </p>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
     <footer>
