@@ -9,10 +9,14 @@ body {
     padding: 10px;
     width: auto;
     text-align: center; }
+    body .main .container .pure-u-1 ul {
+      text-align: left; }
     body .main .container .pure-u-1 a.pure-button {
       margin: 0 auto;
       border-radius: 5px;
       background: #ca3c3c; }
+      body .main .container .pure-u-1 a.pure-button.pure-button-home {
+        background: #42b8dd; }
     body .main .container .pure-u-1.page {
       width: 100%;
       text-align: left; }
@@ -25,3 +29,7 @@ body {
           display: none; }
           body .main .container .pure-u-1.page form fieldset.visible {
             display: block; }
+    body .main .container .pure-u-1.finish {
+      width: 100%; }
+      body .main .container .pure-u-1.finish > p {
+        text-align: left; }

@@ -16,10 +16,17 @@ body {
                 width: auto;
                 text-align: center;
 
+                ul {
+                    text-align: left;
+                }
+
                 a.pure-button {
                     margin: 0 auto;
                     border-radius: 5px;
                     background: rgb(202, 60, 60);
+                    &.pure-button-home {
+                      background: rgb(66, 184, 221);
+                    }
                 }
                 &.page {
                     width: 100%;
@@ -35,6 +42,12 @@ body {
                                 display: block;
                             }
                         }
+                    }
+                }
+                &.finish {
+                    width: 100%;
+                    > p {
+                        text-align: left;
                     }
                 }
             }
